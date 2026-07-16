@@ -8,16 +8,20 @@
 
 ## What Is This?
 
-AS Adventurer Creator is a standalone desktop tool that lets you create animated VTuber / PNGtuber assets from scratch. It walks you through a simple 4-step pipeline — from a static sprite all the way to a transparent, looping animated model ready for streaming.
+AS Adventurer Creator is a standalone desktop tool that can be integrated into AS Adventurer Overlay. The application lets you create animated VTuber / PNGtuber assets from scratch. It walks you through a simple 4-step pipeline — from a static sprite all the way to a transparent, looping animated model ready for streaming.
 
 No installation required. Just run `ASAdventurer-creator.exe` and open your browser.
 
 ---
+⚠️**Security Warning**
 
+This service runs over plain HTTP and does not encrypt traffic unless specificaly set up to do so. Credentials, session tokens, and other sensitive data may be transmitted in cleartext. Do not expose this service to untrusted networks. Use a reverse proxy with HTTPS or restrict access to a trusted LAN.
+
+---
 ## Quick Start
 
-1. **Double-click** `ASAdventurer-creator.exe` (or use `Start AS Adventurer.bat`)
-2. Your browser will open to `http://localhost:3001`
+1. **Double-click** the `ASAdventurer.exe` file downloaded from https://clio.angelssword.com/adventurer/index.html  (or use `Start AS Adventurer.bat` to create it yourself)
+2. Once exe is ran your browser will open to `http://localhost:3001`
 3. Follow the 4-step pipeline below
 
 ---
