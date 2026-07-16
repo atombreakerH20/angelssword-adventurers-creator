@@ -1,3 +1,5 @@
+![Screenshot](images/demo.png)
+
 # ⚔️ AS Adventurer Creator
 
 **VTuber Creation Pipeline by Angel's Sword Studios**
