@@ -6,7 +6,7 @@
  * Or just double-click: build-exe.bat
  * 
  * Output goes to: dist/ASAdventurer/
- *   ├── ASAdventurer.exe
+ *   ├── ASAdventurer-creator.exe
  *   ├── public/          (UI files: sprite-prep, video-prep, model-exporter)
  *   └── Start AS Adventurer.bat
  */
@@ -61,13 +61,13 @@ if (fs.existsSync(DIST)) {
 fs.mkdirSync(DIST, { recursive: true });
 
 // 3. Compile EXE with pkg
-log('Compiling server.js → ASAdventurer.exe ...');
+log('Compiling server.js → ASAdventurer-creator.exe ...');
 const ICON = path.join(ROOT, 'icon.ico');
 const pkgCmd = [
   'npx --yes pkg',
   `"${path.join(ROOT, 'server.js')}"`,
   '--targets node18-win-x64',
-  '--output', `"${path.join(DIST, 'ASAdventurer.exe')}"`,
+  '--output', `"${path.join(DIST, 'ASAdventurer-creator.exe')}"`,
   '--compress GZip',
   fs.existsSync(ICON) ? `--icon "${ICON}"` : ''
 ].filter(Boolean).join(' ');
@@ -98,7 +98,7 @@ echo  Open your browser to: http://localhost:3001
 echo.
 cd /d "%~dp0"
 start http://localhost:3001
-ASAdventurer.exe
+ASAdventurer-creator.exe
 pause
 `);
 
@@ -135,7 +135,7 @@ log(`Output: ${DIST}`);
 log(`   ZIP: ${ZIP_PATH}`);
 log('');
 log('Contents:');
-log('  ASAdventurer.exe             — Double-click to run');
+log('  ASAdventurer-creator.exe             — Double-click to run');
 log('  Start AS Adventurer.bat      — Launcher (opens browser automatically)');
 log('  README.md                    — Documentation');
 log('  public/                      — UI files');

@@ -10,13 +10,13 @@
 
 AS Adventurer Creator is a standalone desktop tool that lets you create animated VTuber / PNGtuber assets from scratch. It walks you through a simple 4-step pipeline — from a static sprite all the way to a transparent, looping animated model ready for streaming.
 
-No installation required. Just run `ASAdventurer.exe` and open your browser.
+No installation required. Just run `ASAdventurer-creator.exe` and open your browser.
 
 ---
 
 ## Quick Start
 
-1. **Double-click** `ASAdventurer.exe` (or use `Start AS Adventurer.bat`)
+1. **Double-click** `ASAdventurer-creator.exe` (or use `Start AS Adventurer.bat`)
 2. Your browser will open to `http://localhost:3001`
 3. Follow the 4-step pipeline below
 
@@ -147,7 +147,7 @@ The exported WebM files also work with any OBS browser source, PNGtuber app, or 
 
 ```
 ASAdventurer/
-├── ASAdventurer.exe          ← Main application (double-click to run)
+├── ASAdventurer-creator.exe          ← Main application (double-click to run)
 ├── Start AS Adventurer.bat   ← Launcher with console output
 ├── README.md                 ← This file
 ├── icon.ico                  ← Application icon
